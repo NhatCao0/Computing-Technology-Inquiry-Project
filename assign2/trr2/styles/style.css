@@ -1,0 +1,668 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{ 
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:hover{
+    background: #820000;
+    transition: .5s;
+}
+
+.container-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 665px;
+    width: 100%;   
+    background-image: url('images/trunghieu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    background-position: center center;
+}
+
+.container-2 {
+    height: 850px;
+}
+
+.bg-img{
+    color: white;
+    font-size: 17px;
+}
+
+.movie {
+    border:2px solid white;
+    border-radius: 10px;
+    padding: 50px 50px;
+    margin-left:100px;
+    max-width: 500px;
+}
+.movie:hover {
+    background: black;
+    transition: .5s;
+}
+
+.movie h2 {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.movie h4 {
+    color:white;
+    font-size: 20px;
+}
+
+.shop-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 100%;
+    height: 200px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding-top: 80px;
+
+}
+
+.vinyl-record { 
+    background-color: black;
+    height: 700px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+.product{
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 400px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 50px 40px;
+    margin: 0 40px; 
+}
+
+.product-img{
+    width: 150px;
+    height: 150px;
+}
+
+.product:hover{
+    background: #820000;
+    transition: .5s;
+}
+
+.about-us {
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 100%;
+    height: 200px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding-top: 80px;  
+}
+
+.container-3 {
+    margin: 30px 0 0 0;
+    padding-top: 30px;
+    background-color: black;
+}
+
+.container-3-ul{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.company {
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer-li { 
+    color: white;
+    margin: 0 90px;
+    margin-bottom: 50px;
+    padding: 0 50px;
+}
+
+.instagram-img {
+    height: 15px;
+    width: 15px;
+}
+
+.facebook-img {
+    height: 18px;
+    width: 18px;
+}
+
+.twitter-img {
+    height: 14px;
+    width: 14px;
+}
+
+.li {
+    text-decoration: none;
+    color: white;
+}
+
+.li:hover {
+    color:white;
+    text-decoration: none;
+    padding: 7px 13px;
+    border-radius: 3px;
+    background: #820000;
+    transition: .5s;
+}
+
+
+/******************************PRODUCT.html**********************/
+
+.dung-body {
+    background-color: #3D0000;
+    color: #E6E4DB;
+}
+.dung-hr {
+    border: 1px solid black;
+}
+/* H2 */
+#dung {
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+    border: 3px solid #3D0000;
+}
+h2 {
+    text-align: center;
+}
+
+/* POSTER */
+.poster {
+    height: auto;
+    width: 200px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    padding: 10px;
+}
+.grid-item {
+    padding: 20px;
+}
+figcaption {
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+    color: #ECEBE4;
+}
+
+.grid-item {
+    position: relative; 
+    max-width: 350px; 
+    margin: auto;
+}
+
+.grid-item img { width: 100%; }
+
+/* CAPTION */
+.caption {
+   
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    
+    position: absolute;
+    top: 0; left: 0;
+    text-align: center;
+    padding-top: 30%;
+
+
+    
+    background-color: rgba(61, 0, 0, 0.8);
+    color: white;
+}
+
+/*  INSIVIBLE/VISBLE CAPTION */
+.caption {
+    visibility: none; opacity: 0;
+    transition: opacity 0.3s;
+}
+.grid-item:hover .caption {
+    visibility: visible; opacity: 1;
+}
+
+
+/* SCHEDULE TABLE */
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    text-indent: 10px;
+}
+.table-row:nth-child(odd) {
+background: rgba(143, 48, 48, 0.2);
+}
+#head-table { 
+background-color: black;
+color: aliceblue;
+}
+
+/* PRICE LIST */
+
+.price-column {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+.price {
+    list-style-type: none;
+    border: 1px solid #312921;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgb(108, 14, 22)
+}
+#header-single {
+    color: #E6E4DB;
+    font-size: 25px;
+    background-image: url(images/ticket-imagestar2.jpeg);
+}
+#header-couple {
+    color: #E6E4DB;
+    font-size: 25px;
+    background-image: url(images/ticket-imagestar1.jpeg);
+}
+#header-family {
+    color: #E6E4DB;
+    font-size: 25px;
+    background-image: url(images/ticket-imagestar4.jpeg);
+}
+.price li {
+    padding: 20px;
+    text-align: center;
+}
+.dung-price-info {
+    background-color: #0C0A08;
+}
+.grey {
+    background-color:#1E1E1F;
+    font-size: 20px;
+}
+
+.dung-price-section {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* FOOD LIST  */
+.food-column {
+    text-align: center;
+}
+ol {
+    display: inline-block;
+    text-align:left;
+    column-count: 3;
+    column-gap: 70px;
+    column-rule: solid 2px;
+}
+/* aside */
+aside { 
+    font-style: italic;
+    width: 25%;
+    float:right;
+    margin-left: 20px;
+    padding: 5px;
+    border: solid white;
+    display: block;
+    text-align: center;
+}
+.dung-foodlist-section {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ENHANCEMENT */
+@media only screen and (max-width: 600px) {
+    .price-column {
+      width: 100%;
+    }
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}
+@media only screen and (orientation: portrait) and (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto auto; 
+    }
+}
+
+
+
+/*****************************ENHANCEMENT.html**********************************/
+
+
+
+/* H1 */
+.phong-h1 {
+    font-size:2em;
+    font-weight:bold;
+    text-align:center;
+    background-color:#820000;
+    color:white;
+    text-transform: uppercase;
+    border: 3px solid #820000;
+}
+
+/* Table list */
+.div-phong-table{
+    display: flex;
+    justify-content: center;
+}
+
+.phong-table, .phong-content, .phong-thead  {
+    padding:15px;   
+    margin:0 45px;
+    border-collapse: collapse;
+    border: solid grey;
+}
+
+.phong-table th { 
+    width:250px;
+}
+
+.phong-thead {
+    font-style: solid ;
+    background-color: #820000;
+    color: grey;
+}
+
+.phong-content {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: lighter;
+    border: solid grey;
+}
+
+.phong-introduce {
+    margin:0 45px;
+    background-color:white;
+    color:black ; 
+    font-size:large;
+}
+
+
+
+
+/*******************************ENQUIRE.html*******************************/
+
+
+
+
+.nhat-h2{
+    margin-top: 20px;
+    font-size: 200%;
+    text-align: center;
+}
+
+.nhat-container{
+    /* height:1720px; */
+    font-size: 20px;
+    /* margin-bottom: 440px; */
+}
+
+.nhat-middle{
+    color: white;
+    background-color: #520000 ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+input[type="submit"] {  
+    width: 10em;
+    height: 3em;
+    font-family: Comic Sans;
+    background-color: rgb(255, 98, 0);
+    font-size: 100%;
+    font-family: fantasy;
+    border-radius: 10px;
+    color: black
+    
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(purple, yellow);
+}
+
+p {
+    margin: 10px;
+    padding: 20px;
+}
+
+
+
+fieldset{
+    border-radius:10px;
+    border: 5px solid black;
+ }
+
+fieldset legend{
+    color: white;
+}
+
+textarea{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    border-radius: 6px;
+    border-color: #820000;
+    font-size: 20px;
+
+}
+::placeholder {
+    font-size: 20px;
+}
+input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding:5px;
+    color: black;
+    border-radius: 6px;
+    border-color: rgb(114, 97, 4);
+}
+
+
+
+input{
+    width: 100%;
+
+}
+
+
+input[type="radio"], input[type="checkbox"]{
+    width: 3em;
+}
+
+select option{
+    border-radius: 6px;
+}
+
+select {
+    font-size: 20px;
+}
+
+.nhat-text-shadow{
+    text-shadow: 2px 3px rgb(105,105,105,0.3);
+}
+
+
+/***************************ABOUT.html****************************/
+
+.tri-h1 { 
+    text-align: center;
+    font-size: 2em;;
+    color: white;
+}
+.tri-body {
+    background-color: #3d0000;
+}
+.tri-body-div {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* IMAGES */
+
+.tri-description {
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+}
+.tri-image:hover + .tri-description {
+    display: block;
+}
+.tri-row {
+    display: flex;
+}
+.tri-column {
+    flex: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+  
+.tri-image {
+    width: 60%;
+    height: auto;
+  }
+.tri-figure {
+    float: right;
+}
+.tri-figure:focus .tri-description,
+.tri-figure:hover .tri-description {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
+}
+
+.tri-image {
+    border: 8px solid #000000; /* outer border */
+    border-style: double;
+    border-width: 4px;
+    padding: 20px; /* spacing between borders */
+    display: block; /* to center the image */
+    margin: auto; /* to center the image */
+  }
+  
+.tri-image:before {
+    content: "";
+    display: block;
+    border: 4px solid #000; /* inner border */
+    position: absolute;
+    top: 4px; /* spacing between borders */
+    left: 8px; /* spacing between borders */
+    right: 8px; /* spacing between borders */
+    bottom: 4px; /* spacing between borders */
+    z-index: -1; /* behind the image */
+}
+
+
+/* TABLE */
+.tri-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.tri-th, .tri-td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 10px;
+    text-align: center;
+    }
+.tri-th {
+    background-color:#dc1414;
+}
+.tri-td {
+    background-color:#fbacac;
+}
+
+.error{
+    color:#dc1414;
+}
+
+.management{
+    height: 1000px;
+}
+
+.mt-5{
+    margin-top: 30px;
+}
